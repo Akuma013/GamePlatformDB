@@ -1,2 +1,2 @@
 SELECT username, email
-FROM [User];
+FROM GamePlatformDB.dbo.[User];
