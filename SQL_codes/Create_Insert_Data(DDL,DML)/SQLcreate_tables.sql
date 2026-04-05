@@ -13,9 +13,10 @@ USE GamePlatformDB;
    ========================= */
 
 CREATE TABLE [User] (
-    username VARCHAR(50) PRIMARY KEY,  -- No need for IDENTITY for VARCHAR primary keys
+    username VARCHAR(50) PRIMARY KEY,
     nickname VARCHAR(50),
-    email VARCHAR(100)
+    email VARCHAR(100),
+    balance DECIMAL(10,2)
 );
 
 CREATE TABLE Publisher (
