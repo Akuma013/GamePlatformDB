@@ -1,3 +1,3 @@
-CREATE VIEW AllUsers AS
-SELECT username, email
+CREATE VIEW AlUsers AS
+SELECT username, email, balance
 FROM [User];
