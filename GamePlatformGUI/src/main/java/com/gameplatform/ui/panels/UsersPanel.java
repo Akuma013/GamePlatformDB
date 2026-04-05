@@ -30,13 +30,13 @@ public class UsersPanel extends BasePanel {
 
         // User table: username, nickname, email
         JScrollPane sp = buildTable(new String[]{
-            "username", "nickname", "email"
+            "username", "nickname", "email","balance"
         });
         add(sp, BorderLayout.CENTER);
         add(buildStatusBar(), BorderLayout.SOUTH);
     }
 
     private void refresh() {
-        loadTable("SELECT username, nickname, email FROM [User] ORDER BY username");
+        loadTable("SELECT username, nickname, email,balance FROM [User] ORDER BY username");
     }
 }
